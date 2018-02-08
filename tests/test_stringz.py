@@ -32,7 +32,7 @@ def test_split_comma():
 def test_decorate():
     assert decorate('Au revoir.') == """Quelle phrase magnifique !
 Jugez-en par vous-meme : Au revoir.
-N'est-ce pas ?."""
+N'est-ce pas ?"""
 
     with pytest.raises(ValueError):
         decorate({"you": "may die"})
